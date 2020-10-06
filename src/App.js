@@ -3,11 +3,13 @@ import { Provider } from 'react-redux';
 
 import configureStore from './store/configureStore';
 
+import Characters from './components/Characters';
+
 function App() {
   return (
     <Provider store={configureStore()}>
       <div>
-        <h1>Rjing</h1>
+        <Characters />
       </div>
     </Provider>
   );
